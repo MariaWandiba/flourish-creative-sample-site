@@ -29,7 +29,6 @@ nav ul {
   background-image: url(/flourish-collective-sample-site/img/pexels-godisable-jacob-871495.jpg);
   background-size: cover;
   background-position: center;
-
   color: white;
   display: flex;
   flex-direction: column;
@@ -41,7 +40,7 @@ nav ul {
   text-align: center;
   margin: 2rem;
   letter-spacing: 0.03em;
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 
 .hero button {
@@ -54,6 +53,62 @@ nav ul {
   font-size: 12px;
 }
 
+/* Services section */
+
+.services {
+  margin: 0 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-heading {
+  text-align: center;
+  width: 100%;
+}
+
+.services-build,
+.services-launch,
+.services-grow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding: 1rem;
+  width: 33%;
+}
+
+.services-build img,
+.services-launch img,
+.services-grow img {
+  width: 50%;
+}
+
+.services h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.services p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.services button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #97a5aa;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
 /* intro section */
 
 .intro {
@@ -63,32 +118,40 @@ nav ul {
 
 .intro img {
   width: 100%;
+  align-content: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .intro-image {
-  flex: 1 1 10rem;
+  flex: 1 1 30rem;
 }
 
 .intro-text {
   display: flex;
-  flex: 1 1 10rem;
+  flex: 1 1 30rem;
   flex-direction: column;
   background-color: #f6f5f1;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem 5rem;
 }
 
 .intro-text h2 {
-  padding: 0.5rem;
+  padding: 1.5rem;
+  text-align: left;
 }
 
 .intro-text p {
   padding: 1rem;
-  line-height: 1.5em;
+  text-align: left;
+  line-height: 1.7em;
+  font-size: 20px;
 }
 
 .intro-text button {
+  margin-top: 2rem;
   padding: 1rem 2rem;
   border: none;
   background: #ad8c68;
