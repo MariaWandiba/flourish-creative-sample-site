@@ -1,3 +1,34 @@
+/* Fonts */
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 33px;
+  letter-spacing: 0.03em;
+  line-height: 1.4em;
+  text-transform: none;
+}
+
+h2 {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 0em;
+  line-height: 1em;
+  text-transform: none;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.8em;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #222;
+  text-transform: none;
+  margin: 0.3em 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,12 +43,15 @@ a {
 }
 
 nav ul {
+  margin: 0 15rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 11px;
   min-height: 15vh;
   list-style-type: none;
 }
@@ -36,11 +70,9 @@ nav ul {
   justify-content: center;
 }
 
-.hero h2 {
+.hero h1 {
   text-align: center;
   margin: 2rem;
-  letter-spacing: 0.03em;
-  line-height: 1.5em;
 }
 
 .hero button {
@@ -49,14 +81,16 @@ nav ul {
   background: #ad8c68;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  margin-top: 1rem;
   font-size: 12px;
+  letter-spacing: 0.2em;
 }
 
 /* Services section */
 
 .services {
-  margin: 0 10rem;
+  height: 100vh;
+  padding: 7rem 9rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -82,18 +116,17 @@ nav ul {
 .services-build img,
 .services-launch img,
 .services-grow img {
-  width: 50%;
+  padding-top: 1rem;
+  width: 100%;
 }
 
 .services h2 {
-  font-size: 40px;
-  text-align: center;
+  padding-top: 2rem;
 }
 
 .services p {
-  font-size: 16px;
+  padding-top: 1rem;
   text-align: center;
-  line-height: 1.5em;
 }
 
 .services button {
@@ -102,9 +135,9 @@ nav ul {
   border: none;
   background: #97a5aa;
   color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
   font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   align-items: center;
   justify-content: center;
 }
@@ -116,16 +149,17 @@ nav ul {
   flex-wrap: wrap;
 }
 
-.intro img {
-  width: 100%;
-  align-content: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-}
-
 .intro-image {
   flex: 1 1 30rem;
+}
+
+.intro img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-text {
@@ -134,20 +168,17 @@ nav ul {
   flex-direction: column;
   background-color: #f6f5f1;
   justify-content: center;
-  align-items: center;
-  padding: 2rem 5rem;
+  align-items: left;
+  padding: 0rem 8rem;
 }
 
 .intro-text h2 {
-  padding: 1.5rem;
+  padding: 1rem 0;
   text-align: left;
 }
 
 .intro-text p {
-  padding: 1rem;
   text-align: left;
-  line-height: 1.7em;
-  font-size: 20px;
 }
 
 .intro-text button {
@@ -155,6 +186,52 @@ nav ul {
   padding: 1rem 2rem;
   border: none;
   background: #ad8c68;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+}
+
+.intro-text button:hover {
+  background: #9b7c5b;
+}
+
+/* Blog posts section */
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.blog-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.blog-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.blog-posts img {
+  width: 25%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #97a5aa;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.2em;
