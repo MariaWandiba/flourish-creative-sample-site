@@ -1,12 +1,10 @@
-img {
-  height: 2rem;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+/* navigation section */
 
 a {
   color: black;
@@ -20,15 +18,18 @@ nav ul {
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  min-height: 10vh;
+  min-height: 15vh;
   list-style-type: none;
 }
 
+/* hero section */
+
 .hero {
-  min-height: 90vh;
+  min-height: 85vh;
   background-image: url(/flourish-collective-sample-site/img/pexels-godisable-jacob-871495.jpg);
   background-size: cover;
   background-position: center;
+
   color: white;
   display: flex;
   flex-direction: column;
@@ -39,4 +40,60 @@ nav ul {
 .hero h2 {
   text-align: center;
   margin: 2rem;
+  letter-spacing: 0.03em;
+  line-height: 1.4em;
+}
+
+.hero button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #ad8c68;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+}
+
+/* intro section */
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro img {
+  width: 100%;
+}
+
+.intro-image {
+  flex: 1 1 10rem;
+}
+
+.intro-text {
+  display: flex;
+  flex: 1 1 10rem;
+  flex-direction: column;
+  background-color: #f6f5f1;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.intro-text h2 {
+  padding: 0.5rem;
+}
+
+.intro-text p {
+  padding: 1rem;
+  line-height: 1.5em;
+}
+
+.intro-text button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #ad8c68;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
 }
